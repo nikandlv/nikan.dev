@@ -1,0 +1,51 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "CommonJS",
+    "lib": ["dom", "esnext"],
+    "declaration": true,
+    "declarationMap": true,
+    "noEmit": true,
+    "jsx": "preserve",
+    "strict": true,
+    "pretty": true,
+    "sourceMap": true,
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    /* Module Resolution Options */
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "baseUrl": "./src/app",
+    "paths": {
+      "global/*": ["containers/global/*"],
+
+      "types/*": ["data/types/*"],
+      "models/*": ["data/models/*"],
+      "providers/*": ["data/providers/*"],
+      "redux/*": ["data/redux/*"],
+
+      "hooks/*": ["hooks/*"],
+      "locale/*": ["locale/*"],
+      "containers/*": ["containers/*"],
+      "themes/*": ["themes/*"]
+    }
+  },
+  "exclude": [
+    "test",
+    "release",
+    "app/main.prod.js",
+    "app/renderer.prod.js",
+    "app/dist",
+    "dll"
+  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+}
