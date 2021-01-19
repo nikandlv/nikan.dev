@@ -1,22 +1,21 @@
-import * as React from 'react';
-import { makeStyles, Typography } from '@material-ui/core';
-import Logo from './Logo';
-import TestIcon from '@material-ui/icons/DetailsRounded';
+import * as React from "react";
+import { makeStyles, Typography } from "@material-ui/core";
+import TestIcon from "@material-ui/icons/DetailsRounded";
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
-    display: 'flex',
-    alignItems: 'center',
+    display: "flex",
+    alignItems: "center",
   },
   text: {
     marginLeft: 8,
-    fontWeight: 'bold',
+    fontWeight: "bold",
   },
   tinted: {
     opacity: 0.3,
   },
   rotate: {
-    transform: 'rotate(23deg)',
+    transform: "rotate(23deg)",
     fontSize: 32,
   },
 }));

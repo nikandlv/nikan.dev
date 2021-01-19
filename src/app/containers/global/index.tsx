@@ -1,6 +1,5 @@
 import * as React from "react";
 import { makeStyles, ThemeProvider, CssBaseline } from "@material-ui/core";
-import Footer from "./layouts/Footer";
 import { RecoilRoot, useRecoilValue } from "recoil";
 import { ThemeState } from "data/states/ThemeStore";
 import LightTheme from "themes/LightTheme";

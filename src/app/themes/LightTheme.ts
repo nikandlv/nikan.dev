@@ -1,3 +1,4 @@
+// @ts-ignore
 import { createMuiTheme, Theme } from "@material-ui/core/styles";
 import { orange, red } from "@material-ui/core/colors";
 import "./index";
