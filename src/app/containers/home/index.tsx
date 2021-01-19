@@ -16,6 +16,7 @@ import LinkedinIcon from "icons/LinkedinIcon";
 import TwitterIcon from "icons/TwitterIcon";
 
 import * as React from "react";
+import { generateAssetUrl } from "utils/Assets";
 
 export interface IHomePageProps {}
 
@@ -71,7 +72,10 @@ export default function HomePage(_: IHomePageProps) {
 
   return (
     <CardContent component="section">
-      <Avatar className={classes.avatar} src="/images/profile.jpeg">
+      <Avatar
+        className={classes.avatar}
+        src={generateAssetUrl("/images/profile.jpeg")}
+      >
         ND
       </Avatar>
       <br />

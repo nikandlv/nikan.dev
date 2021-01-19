@@ -5,6 +5,7 @@ import { ThemeState } from "data/states/ThemeStore";
 import LightTheme from "themes/LightTheme";
 import DarkTheme from "themes/DarkTheme";
 import BlurContainer from "./layouts/BlurContainer";
+import { generateAssetUrl } from "utils/Assets";
 
 export interface IGlobalWrapperProps {
   children?: React.ReactNode;
@@ -14,7 +15,9 @@ const useGlobalStyle = makeStyles((theme) => ({
   "@global": {
     html: {
       backgroundColor: theme.palette.background.default,
-      background: "url(/images/background.jpg) no-repeat center center fixed",
+      background: `url(${generateAssetUrl(
+        "/images/background.jpg"
+      )}) no-repeat center center fixed`,
       backgroundSize: "cover",
     },
     body: {},
